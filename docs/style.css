@@ -1,20 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
+    padding-bottom: 1000px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
 }
 
+
+
 header {
-    background-color: #004a99;
-    color: white;
+    background-color: #048608;
+    color: #ffffff;
     padding: 10px 0;
+    height: 80px;
 }
 
 header .container {
@@ -38,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -49,7 +54,7 @@ nav ul li a:hover {
 
 .hero {
     background: url('kysuce.jpg') no-repeat center center/cover;
-    color: black;
+    color: #000000;
     padding: 100px 0;
     text-align: center;
 }
@@ -63,30 +68,55 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-.about {
-    background-color: white;
+.coat-of-arms {
+    margin-top: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.about, .news, .contact {
+    background-color: #f4f4f4;
     padding: 50px 20px;
     text-align: center;
 }
 
-.about h2 {
+.contact{
+    height: 471px;
+}
+
+.about h2, .news h2, .contact h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.about p {
+.about p, .news p, .contact p {
     font-size: 1.1rem;
     max-width: 800px;
     margin: 0 auto;
+
+}
+
+.about h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #048608; 
+}
+
+.about p {
+    margin-bottom: 15px; 
+    line-height: 1.6;
+    color: #333; 
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #121416;
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
+    bottom: 0;
 }
 
 footer p {
     margin: 0;
 }
+
