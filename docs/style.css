@@ -120,3 +120,46 @@ footer p {
     margin: 0;
 }
 
+
+.news article {
+    background-color: #fffc2f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news h3 {
+    color: #048608; 
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.news p {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.news-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #048608;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
