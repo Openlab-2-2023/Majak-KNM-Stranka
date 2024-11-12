@@ -161,5 +161,31 @@ footer p {
 }
 
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+
+  .history-image, .news-image {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+ .history-image { 
+
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.news-image{
+    width: 30%;
+}
+
+
 
 
