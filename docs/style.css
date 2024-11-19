@@ -175,6 +175,9 @@ img {
 }
 
 
+.KNM{
+    width: 40%;
+}
 
  .history-image { 
 
@@ -182,12 +185,16 @@ img {
     margin-bottom: 30px;
 }
 
-.news-image{
-    width: 30%;
-}
-
 .nature-image{
     width: 40%;
+}
+
+.Modern-KNM{
+    width: 40%;
+}
+
+.news-image{
+    width: 30%;
 }
 
 .mapa{
