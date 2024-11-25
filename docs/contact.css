@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #048608;
+    color: #ffffff;
+    padding: 10px 0;
+    height: 80px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    position: relative;
+    background: url('https://scontent.fbts10-1.fna.fbcdn.net/v/t39.30808-6/385073891_718401943659991_7774930383260075966_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=EPXo8XX8VoYQ7kNvgHqRrdC&_nc_zt=23&_nc_ht=scontent.fbts10-1.fna&_nc_gid=Acw7ms2hHSn-rF4TVLWNIXm&oh=00_AYBqCwNvQw7WNLFuNV26pKuX6or26cexSw5-E_yQcdlVhw&oe=674A65B3') no-repeat center center/cover;
+    color: #FFD700;
+    padding: 50px 20px;
+    text-align: center;
+    height: 471px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+   
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #FFD700;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    background-color: #121416;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
