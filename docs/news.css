@@ -101,6 +101,25 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.download-btn {
+    background-color: #048608;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.download-btn:hover {
+    background-color: #036804;
+    transition: background-color 0.3s;
+}
+
+
 footer {
     background-color: #121416;
     color: #ffffff;
