@@ -55,12 +55,40 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li .dropdown-btn {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #048608;
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    right: 0;
+    padding: 10px;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+
+
 .hero {
     background: url('kysuce.jpg') no-repeat center center/cover;
     color: #000000;
     text-align: center;
     width: 100%;
-    height: calc(100vh - 80px); 
+    height: calc(100vh - 80px);
 }
 
 .hero h2 {
@@ -70,25 +98,6 @@ nav ul li a:hover {
 .hero p {
     font-size: 1.2rem;
     margin-top: 10px;
-}
-
-
-.download-btn {
-    background-color: #048608;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-.download-btn:hover {
-    background-color: #036804;
-    transition: background-color 0.3s;
 }
 
 footer {
@@ -102,4 +111,18 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+.coat-of-arms {
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.coat-of-arms.rotated {
+    transform: rotateY(360deg);
+}
+
+.coat-of-arms img {
+    backface-visibility: hidden;
 }
