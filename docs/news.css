@@ -4,21 +4,18 @@
     box-sizing: border-box;
 }
 
-body { 
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
     color: #333;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 header {
     background-color: #048608;
     color: #ffffff;
-    padding: 15px 0;  
-    height: 87px; 
+    padding: 15px 0;
+    height: 87px;
 }
 
 header .container {
@@ -35,12 +32,10 @@ header h1 {
 nav ul {
     list-style-type: none;
     margin-right: 20px;
-    padding: 0;
     display: flex;
 }
 
 nav ul li {
-    position: relative;
     margin-right: 15px;
 }
 
@@ -52,10 +47,6 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-}
-
-nav ul li .dropdown-btn {
-    cursor: pointer;
 }
 
 nav ul li .dropdown-content {
@@ -92,24 +83,6 @@ nav ul li:hover .dropdown-content {
     background-color: #075f07;
 }
 
-.download-btn {
-    background-color: #048608;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-.download-btn:hover {
-    background-color: #036804;
-    transition: background-color 0.3s;
-}
-
 .news {
     background-color: #f4f4f4;
     padding: 30px 20px;
@@ -135,16 +108,14 @@ nav ul li:hover .dropdown-content {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    position: relative;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .news article:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .news h3 {
@@ -159,10 +130,14 @@ nav ul li:hover .dropdown-content {
     line-height: 1.6;
 }
 
-.news article img {
-    width: 40%;
-    height: auto;
-    border-radius: 8px;
+
+
+.icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 5%;
+    z-index: 10;
 }
 
 .news-image {
@@ -178,9 +153,9 @@ footer {
     background-color: #121416;
     color: #ffffff;
     text-align: center;
-    padding: 20px 0;  
-    width: 100%;
+    padding: 20px 0;
     margin-top: auto;
+    width: 100%;
 }
 
 footer p {
