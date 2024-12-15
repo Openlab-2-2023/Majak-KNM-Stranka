@@ -74,36 +74,6 @@ nav ul li:hover .dropdown-content {
     transform: translateY(0);
 }
 
-.dropdown-content a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 5px 10px;
-}
-
-.dropdown-content a:hover {
-    background-color: #075f07;
-}
-
-.download-btn {
-    background-color: #048608;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-.download-btn:hover {
-    background-color: #036804;
-    transition: background-color 0.3s;
-}
-
-
 .about {
     background-color: #f4f4f4;
     padding: 50px 20px;
@@ -131,17 +101,31 @@ nav ul li:hover .dropdown-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.KNM {
+.KNM, .history-image, .culture, .nature-image, .original, .Modern-KNM {
     width: 40%;
 }
 
-.history-image, .nature-image, .Modern-KNM, .Nei {
-    width: 40%;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #048608;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
 }
 
+#backToTop:hover {
+    background-color: #048608;
+}
 
 footer {
     background-color: #121416;

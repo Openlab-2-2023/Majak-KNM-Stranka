@@ -130,8 +130,6 @@ nav ul li:hover .dropdown-content {
     line-height: 1.6;
 }
 
-
-
 .icon {
     position: absolute;
     top: 10px;
@@ -147,6 +145,29 @@ nav ul li:hover .dropdown-content {
     margin: 20px auto 0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #048608;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #048608;
 }
 
 footer {

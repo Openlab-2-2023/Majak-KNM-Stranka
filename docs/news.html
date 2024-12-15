@@ -50,6 +50,8 @@
             </article>
             <img src="images/korculovanie.jpg" alt="Novinky o meste" class="news-image">
         </div>
+        <a id="top"></a>
+        <button id="backToTop">Back to Top</button>
     </section>
 
     <footer class="footer">
@@ -57,5 +59,19 @@
             <p>&copy; 2024 Kysucké Nové Mesto. Všetky práva vyhradené.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            if (window.scrollY > 200) {
+                document.getElementById('backToTop').style.display = 'block';
+            } else {
+                document.getElementById('backToTop').style.display = 'none';
+            }
+        });
+
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
