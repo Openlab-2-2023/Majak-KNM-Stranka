@@ -96,6 +96,10 @@ nav ul li:hover .dropdown-content {
     background-color: #075f07;
 }
 
+.Erb {
+    width: 17%;
+}
+
 .hero {
     background: url('kysuce.jpg') no-repeat center center/cover;
     color: #333;
