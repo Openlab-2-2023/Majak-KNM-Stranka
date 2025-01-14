@@ -1,3 +1,4 @@
+/* Štýly pre celé telo stránky */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -8,23 +9,29 @@ body {
     box-sizing: border-box;
 }
 
+/* Štýly pre hlavičku stránky */
 header {
     background-color: #048608;
     color: #ffffff;
-    padding: 10px 0;
-    height: 80px;
+    height: 95px; 
+    display: flex;
+    align-items: center;
 }
 
+/* Kontajner v hlavičke */
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
+/* Nadpis v hlavičke */
 header h1 {
     margin-left: 20px;
 }
 
+/* Štýly pre navigačný zoznam */
 nav ul {
     list-style-type: none;
     margin-right: 20px;
@@ -32,25 +39,30 @@ nav ul {
     display: flex;
 }
 
+/* Položky v navigačnom zozname */
 nav ul li {
     position: relative;
     margin-right: 15px;
 }
 
+/* Odkazy v navigačnom zozname */
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Zvýraznenie odkazu pri hover */
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Tlačidlo pre rozbaľovacie menu */
 nav ul li .dropdown-btn {
     cursor: pointer;
 }
 
+/* Rozbaľovacie menu */
 nav ul li .dropdown-content {
     display: none;
     position: absolute;
@@ -68,29 +80,36 @@ nav ul li .dropdown-content {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* Zobrazenie rozbaľovacieho menu pri hover */
 nav ul li:hover .dropdown-content {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
 
+/* Sekcia "O nás" */
 .about {
     background-color: #f4f4f4;
     padding: 50px 20px;
     text-align: center;
 }
 
+/* Nadpis sekcie "O nás" */
 .about h2 {
     font-size: 2rem;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
 }
 
+/* Podnadpis sekcie "O nás" */
 .about h3 {
     margin-top: 20px;
     font-size: 1.8rem;
+    font-family: 'Merriweather', serif;
     color: #048608;
 }
 
+/* Text sekcie "O nás" */
 .about p {
     font-size: 1.1rem;
     max-width: 800px;
@@ -101,10 +120,12 @@ nav ul li:hover .dropdown-content {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Obrázky spojené s rôznymi sekciami */
 .KNM, .history-image, .culture, .nature-image, .original, .Modern-KNM {
     width: 40%;
 }
 
+/* Tlačidlo na návrat nahor */
 #backToTop {
     position: fixed;
     bottom: 30px;
@@ -123,10 +144,12 @@ nav ul li:hover .dropdown-content {
     transition: background-color 0.3s ease;
 }
 
+/* Zvýraznenie tlačidla pri hover */
 #backToTop:hover {
     background-color: #048608;
 }
 
+/* Štýly pre pätičku */
 footer {
     background-color: #121416;
     color: #ffffff;
@@ -136,6 +159,40 @@ footer {
     margin-top: auto;
 }
 
+/* Text v pätičke */
 footer p {
     margin: 0;
+}
+
+/* Responzívne úpravy pre menšie obrazovky (do 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .about h2 {
+        font-size: 1.6rem;
+    }
+
+    .about h3 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .KNM, .history-image, .culture, .nature-image, .original, .Modern-KNM {
+        width: 60%;
+    }
+
+    #backToTop {
+        padding: 10px 15px;
+    }
 }

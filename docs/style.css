@@ -1,3 +1,4 @@
+/* Resetovanie základných štýlov pre všetky elementy */
 html, body {
     height: 100%;
     margin: 0;
@@ -5,8 +6,9 @@ html, body {
     box-sizing: border-box;
 }
 
+/* Štýly pre celé telo stránky */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif; 
     line-height: 1.6;
     background-color: #ffffff;
     color: #333;
@@ -16,14 +18,16 @@ body {
     height: 100%;
 }
 
+/* Štýly pre hlavičku stránky */
 header {
     background-color: #048608;
     color: #ffffff;
-    padding: 10px 0;
-    height: 80px;
-    width: 100%;
+    height: 100px; 
+    display: flex;
+    align-items: center; 
 }
 
+/* Kontajner v hlavičke */
 header .container {
     display: flex;
     justify-content: space-between;
@@ -31,10 +35,13 @@ header .container {
     width: 100%;
 }
 
+/* Nadpis v hlavičke */
 header h1 {
     margin-left: 20px;
+    font-size: 2rem;
 }
 
+/* Navigačný zoznam v hlavičke */
 nav ul {
     list-style-type: none;
     margin-right: 20px;
@@ -42,26 +49,30 @@ nav ul {
     display: flex;
 }
 
+/* Lištové položky v navigácii */
 nav ul li {
     position: relative;
     margin-right: 15px;
 }
 
+/* Odkazy v navigácii */
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Hover efekt na odkazoch */
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-
+/* Tlačidlo pre rozbaľovacie menu */
 nav ul li .dropdown-btn {
     cursor: pointer;
 }
 
+/* Skryté rozbaľovacie menu */
 nav ul li .dropdown-content {
     display: none;
     position: absolute;
@@ -79,12 +90,14 @@ nav ul li .dropdown-content {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* Zobrazenie rozbaľovacieho menu pri hover */
 nav ul li:hover .dropdown-content {
     display: block;
     opacity: 1;
     transform: translateY(0);
 }
 
+/* Odkazy v rozbaľovacom menu */
 .dropdown-content a {
     color: white;
     text-decoration: none;
@@ -92,31 +105,39 @@ nav ul li:hover .dropdown-content {
     padding: 5px 10px;
 }
 
+/* Hover efekt na odkazoch v rozbaľovacom menu */
 .dropdown-content a:hover {
     background-color: #075f07;
 }
 
-.Erb {
-    width: 17%;
-}
-
+/* Hero sekcia (úvodná oblasť stránky) */
 .hero {
     background: url('kysuce.jpg') no-repeat center center/cover;
     color: #333;
     text-align: center;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 80px); /* Výška hero sekcie je prispôsobená výške hlavičky */
 }
 
+/* Nadpis v hero sekcii */
 .hero h2 {
+    font-family: 'Merriweather', serif; 
     font-size: 2.5rem;
+    margin-top: 20px;
 }
 
+/* Text v hero sekcii */
 .hero p {
     font-size: 1.2rem;
     margin-top: 10px;
 }
 
+/* Erb, ktorý bude zobrazený na stránke */
+.Erb {
+    width: 17%;
+}
+
+/* Pätička stránky */
 footer {
     background-color: #121416;
     color: #ffffff;
@@ -126,45 +147,54 @@ footer {
     margin-top: auto;
 }
 
+/* Text v pätičke */
 footer p {
+    font-size: 0.9rem;
     margin: 0;
 }
 
-
+/* Animácia pre erb, ktorý sa otáča */
 .coat-of-arms {
     transition: transform 1s ease-in-out;
     transform-style: preserve-3d;
     cursor: pointer;
 }
 
+/* Rotácia erbu */
 .coat-of-arms.rotated {
     transform: rotateY(360deg);
 }
 
+/* Štýly pre obrázok erbu */
 .coat-of-arms img {
     backface-visibility: hidden;
 }
 
-
+/* Responzívne úpravy pre menšie obrazovky (do 768px) */
 @media (max-width: 768px) {
+    /* Zmena zobrazenia navigačného zoznamu na stĺpcový pre menšie obrazovky */
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Zmenšenie fontu nadpisu v hlavičke */
     header h1 {
         font-size: 1.5rem;
-        margin-left: 0;
+        margin-left: 0; 
     }
 
+    
     .hero h2 {
         font-size: 2rem;
     }
 
+    
     .hero p {
         font-size: 1rem;
     }
 
+   
     .download-btn {
         margin-left: 0;
         margin-top: 20px;

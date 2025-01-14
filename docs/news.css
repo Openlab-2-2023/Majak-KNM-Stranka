@@ -1,9 +1,11 @@
+/* Resetovanie základných štýlov pre všetky elementy */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Štýly pre celé telo stránky */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -11,13 +13,16 @@ body {
     color: #333;
 }
 
+/* Štýly pre hlavičku stránky */
 header {
     background-color: #048608;
     color: #ffffff;
-    padding: 15px 0;
-    height: 87px;
+    height: 95px;
+    display: flex;
+    align-items: center;
 }
 
+/* Kontajner v hlavičke */
 header .container {
     display: flex;
     justify-content: space-between;
@@ -25,30 +30,41 @@ header .container {
     width: 100%;
 }
 
+/* Nadpis v hlavičke */
 header h1 {
     margin-left: 20px;
 }
 
+/* Štýly pre navigačný zoznam */
 nav ul {
     list-style-type: none;
     margin-right: 20px;
     display: flex;
 }
 
+/* Položky v navigačnom zozname */
 nav ul li {
     margin-right: 15px;
 }
 
+/* Odkazy v navigačnom zozname */
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Zvýraznenie odkazu pri hover */
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Rozbaľovacie menu */
+nav ul li.dropdown {
+    position: relative; /* Dôležité pre pozicionovanie rozbaľovacieho menu */
+}
+
+/* Rozbaľovacie menu v navigácii */
 nav ul li .dropdown-content {
     display: none;
     position: absolute;
@@ -66,12 +82,14 @@ nav ul li .dropdown-content {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
+/* Zobrazenie rozbaľovacieho menu pri hover */
 nav ul li:hover .dropdown-content {
     display: block;
     opacity: 1;
     transform: translateY(0);
-}
+ }
 
+/* Odkazy v rozbaľovacom menu */
 .dropdown-content a {
     color: white;
     text-decoration: none;
@@ -79,15 +97,18 @@ nav ul li:hover .dropdown-content {
     padding: 5px 10px;
 }
 
+/* Zvýraznenie odkazu v rozbaľovacom menu */
 .dropdown-content a:hover {
     background-color: #075f07;
 }
 
+/* Sekcia pre novinky */
 .news {
     background-color: #f4f4f4;
     padding: 30px 20px;
 }
 
+/* Kontajner pre obsah sekcie noviniek */
 .news .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -96,58 +117,76 @@ nav ul li:hover .dropdown-content {
     gap: 30px;
 }
 
+/* Nadpis sekcie noviniek */
 .news h2 {
     font-size: 2.5rem;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
     text-align: center;
     color: #333;
     margin-bottom: 20px;
 }
 
-.news article {
-    background-color: #f9fc28;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
+/* Štýly pre tabuľku s novinkami */
+.news-table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.news article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Základné štýly pre bunky tabuľky */
+.news-table th, .news-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
-.news h3 {
-    color: #048608;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+/* Zvýraznenie hlavičky tabuľky */
+.news-table th {
+    background-color: #048608;
+    color: white;
+    font-size: 1.2rem;
 }
 
-.news p {
-    color: #000000;
+/* Popis v tabuľke */
+.news-table td {
     font-size: 1rem;
-    line-height: 1.6;
+    color: #333;
+    line-height: 1.5;
 }
 
-.icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 5%;
-    z-index: 10;
+/* Zvýraznenie riadku pri hover */
+.news-table tr:hover {
+    background-color: #f1f1f1;
 }
 
+/* Ikona v tabuľke */
+.news-table td img.icon {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Obrázok novinky */
+.news-table td img.news-image {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+/* Obrázok novinky 2 */
 .news-image {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 40%;
-    max-width: 100%;
-    margin: 20px auto 0;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Tlačidlo na návrat nahor */
 #backToTop {
     position: fixed;
     bottom: 30px;
@@ -166,10 +205,12 @@ nav ul li:hover .dropdown-content {
     transition: background-color 0.3s ease;
 }
 
+/* Zvýraznenie tlačidla pri hover */
 #backToTop:hover {
     background-color: #048608;
 }
 
+/* Štýly pre pätičku */
 footer {
     background-color: #121416;
     color: #ffffff;
@@ -179,6 +220,52 @@ footer {
     width: 100%;
 }
 
+/* Text v pätičke */
 footer p {
     margin: 0;
+}
+
+/* Responzívne úpravy pre menšie obrazovky (do 768px) */
+@media (max-width: 768px) {
+    /* Pre navigáciu */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Pre sekciu noviniek */
+    .news .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .news h2 {
+        font-size: 2rem;
+    }
+
+    /* Pre tabuľku noviniek */
+    .news-table th, .news-table td {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Obrázky v tabuľke */
+    .news-table td img.news-image {
+        width: 80px;
+    }
+
+    .news-image {
+        width: 80%;
+    }
+
+    /* Tlačidlo na návrat nahor */
+    #backToTop {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
 }

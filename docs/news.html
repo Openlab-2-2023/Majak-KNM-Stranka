@@ -19,7 +19,9 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-btn">Služby</a>
                         <div class="dropdown-content">
-                            <a href="KNM-harmonogram-vyvozu-odpadu-2024.pdf" download>Vývoz odpadu</a>
+                            <a href="KNM-harmonogram-vyvozu-odpadu-2024.pdf" download>
+                                Vývoz odpadu
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -30,24 +32,37 @@
     <section class="news">
         <div class="container">
             <h2>Aktuality</h2>
-            <article>
-                <img src="images/tanecnik.webp" alt="Tanečník" class="icon">
-                <h3>Nový kultúrny festival v Kysuckom Novom Meste!</h3>
-                <p>Dátum: 5. november 2024</p>
-                <p>
-                    S radosťou oznamujeme nový kultúrny festival "Kysucké Kultúrne Dni", ktorý sa bude konať 20. - 22. novembra. Tento festival prinesie pestrý program vrátane vystúpení miestnych folklórnych súborov, tradičných remesiel a chutného miestneho jedla. Príďte si vychutnať kultúru a tradície Kysúc naživo!
-                </p>
-            </article>
-    
-            <article>
-                <img src="images/sportovec.webp" alt="Športovec" class="icon">
-                <h3>Otvorenie nového športového areálu</h3>
-                <p>Dátum: 1. november 2024</p>
-                <p>
-                    Dnes bol v našom meste slávnostne otvorený nový športový areál pri Základnej škole Kysucká. Areál ponúka nové ihriská na futbal, basketbal, a tenis, ktoré sú k dispozícii pre všetkých obyvateľov. Príďte si vyskúšať nové športové vybavenie!
-                </p>
-                <img src="images/sportovy-areal.jpg" alt="Novinky o meste" class="news-image">
-            </article>
+            <table class="news-table">
+                <thead>
+                    <tr>
+                        <th>Ikona</th>
+                        <th>Dátum</th>
+                        <th>Aktualita</th>
+                        <th>Popis</th>
+                        <th>Obrázok</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/tanecnik.ico" alt="Tanečník" class="icon"></td>
+                        <td>13.01.2025</td>
+                        <td>Nový kultúrny festival v Kysuckom Novom Meste!</td>
+                        <td>
+                            S radosťou oznamujeme nový kultúrny festival "Kysucké Kultúrne Dni", ktorý sa bude konať 13. - 1. januára. Tento festival prinesie pestrý program vrátane vystúpení miestnych folklórnych súborov, tradičných remesiel a chutného miestneho jedla. Príďte si vychutnať kultúru a tradície Kysúc naživo!
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/sportovec.ico" alt="Športovec" class="icon"></td>
+                        <td>15.01.2025</td>
+                        <td>Otvorenie nového športového areálu</td>
+                        <td>
+                            Dnes bol v našom meste slávnostne otvorený nový športový areál pri Základnej škole Kysucká. Areál ponúka nové ihriská na futbal, basketbal, a tenis, ktoré sú k dispozícii pre všetkých obyvateľov. Príďte si vyskúšať nové športové vybavenie!
+                        </td>
+                        <td><img src="images/sportovy-areal.jpg" alt="Športový areál" class="news-image"></td>
+                    </tr>
+                </tbody>
+            </table>
             <img src="images/korculovanie.jpg" alt="Novinky o meste" class="news-image">
         </div>
         <a id="top"></a>
@@ -59,19 +74,5 @@
             <p>&copy; 2024 Kysucké Nové Mesto. Všetky práva vyhradené.</p>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener('scroll', function() {
-            if (window.scrollY > 200) {
-                document.getElementById('backToTop').style.display = 'block';
-            } else {
-                document.getElementById('backToTop').style.display = 'none';
-            }
-        });
-
-        document.getElementById('backToTop').addEventListener('click', function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
 </body>
 </html>
