@@ -170,6 +170,26 @@ footer p {
     backface-visibility: hidden;
 }
 
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.redirect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b30000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.redirect-button:hover {
+    background-color: #b30000;
+}
+
 /* Responzívne úpravy pre menšie obrazovky (do 768px) */
 @media (max-width: 768px) {
     /* Zmena zobrazenia navigačného zoznamu na stĺpcový pre menšie obrazovky */
@@ -199,4 +219,5 @@ footer p {
         margin-left: 0;
         margin-top: 20px;
     }
+    
 }
